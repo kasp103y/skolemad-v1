@@ -28,7 +28,6 @@
       {/each}
     </ul>
   {/if}
-  hej
 </div>
 
 <style>
