@@ -15,6 +15,6 @@
   routes={{
     "/": Home,
     "/bestil": Bestil,
-    "/konto:": Konto,
+    "/konto": Konto,
   }}
 />
