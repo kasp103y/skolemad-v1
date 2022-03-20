@@ -1,0 +1,126 @@
+:root {
+  /*Farver*/
+
+  --primary: #55c000;
+  --background: #f2f6ee;
+  --box-color: #e7f3de;
+  --accent: #7a9460;
+  --font: #183500;
+  --btn-danger-font: #b70000;
+  --btn-danger: #ffd9d9;
+  --btn-warning: #ffc700;
+  --white: #fff;
+
+  /*Border-radius*/
+  --border-rounded: 0.5rem;
+  --border-round-full: 999px;
+
+  /*Box-shadow*/
+  --shadow-sm: 8px 8px 30px black;
+  --shadow-md: 16px 16px 30px black;
+  --shadow-lg: 32px 32px 30px black;
+
+  /*Spacing*/
+  --spacing-1: 0.5rem;
+  --spacing-2: 1rem;
+  --spacing-4: 2rem;
+  --spacing-8: 4rem;
+  --spacing-16: 8rem;
+  --spacing-32: 16rem;
+  --spacing-64: 32rem;
+
+  /*Mobil*/
+  /*Headings*/
+  --heading-one-m: 2.488rem;
+  --heading-two-m: 2.074rem;
+  --heading-three-m: 1.728rem;
+  --heading-four-m: 1.44rem;
+  --heading-five-m: 1.2rem;
+  --heading-six-m: 1rem;
+  --heading-seven-m: 0.833rem;
+  /*Paragraphs*/
+  --p-lead-m: 1.44rem;
+  --paragraf-m: 1rem;
+  --p-small-m: 0.833rem;
+  /*Line heights*/
+  --heading-one-m-lh: 2.6rem;
+  --heading-two-m-lh: 2.2rem;
+  --heading-three-m-lh: 1.9rem;
+  --p-lead-m-lh: 1.6rem;
+  --paragraf-m-lh: 1.4rem;
+  --p-small-seven-m-lh: 1rem;
+
+  /*Desktop*/
+  /*Headings*/
+  --heading-one: 5.653rem;
+  --heading-two: 3.998rem;
+  --heading-three: 2.827rem;
+  --heading-four: 1.999rem;
+  --heading-five: 1.414rem;
+  --heading-six: 1rem;
+  --heading-seven: 0.9rem;
+  /*Paragraphs*/
+  --p-lead: 1.99rem;
+  --paragraf: 1rem;
+  --p-small: 0.9rem;
+  /*Line heights*/
+  --heading-one-lh: 6rem;
+  --heading-two-lh: 4.5rem;
+  --heading-three-lh: 3.1rem;
+  --p-lead-lh: 2.2rem;
+  --paragraf-lh: 1.4rem;
+  --p-small-seven-lh: 1.1rem;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+* {
+  margin: 0;
+  pad: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "rubik";
+  src: url(fonts/rubik-variablefont_wght-webfont.woff2);
+}
+
+/************Mobil headings******************/
+body {
+  color: var(--font);
+  background-color: var(--background);
+}
+
+h1 {
+  font-size: var(--heading-one-m);
+  line-height: var(--heading-one-m-lh);
+  font-weight: 800;
+  font-family: "rubik";
+}
+h2 {
+  font-size: var(--heading-two-m);
+  line-height: var(--heading-two-m-lh);
+}
+h3 {
+  font-size: var(--heading-three-m);
+  line-height: var(--heading-three-m-lh);
+}
+h4 {
+  font-size: var(--heading-four-m);
+  line-height: var(--heading-four-m-lh);
+}
+
+p {
+  font-size: var(--paragraf);
+  margin: var(--spacing-16) 0;
+}
+
+.p-lead {
+  font-size: var(--p-lead-m);
+  line-height: var(--p-lead-m-lh);
+  font-weight: 700;
+  margin-bottom: var(--spacing-4);
+}
