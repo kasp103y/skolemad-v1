@@ -7,7 +7,9 @@
   import Homeinfo from "../components/Homeinfo.svelte";
 </script>
 
+<Hero />
 <main>
-  <Hero />
   <HomeContent />
 </main>
+
+<style></style>

@@ -88,34 +88,43 @@ img {
   src: url(fonts/rubik-variablefont_wght-webfont.woff2);
 }
 
-/************Mobil headings******************/
 body {
   color: var(--font);
   background-color: var(--background);
+  font-family: "rubik", sans-serif;
 }
+
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+/************Mobil headings******************/
 
 h1 {
   font-size: var(--heading-one-m);
   line-height: var(--heading-one-m-lh);
-  font-weight: 800;
-  font-family: "rubik";
+  font-weight: 900;
 }
 h2 {
   font-size: var(--heading-two-m);
   line-height: var(--heading-two-m-lh);
+  font-weight: 700;
 }
 h3 {
   font-size: var(--heading-three-m);
   line-height: var(--heading-three-m-lh);
+  font-weight: 700;
 }
 h4 {
   font-size: var(--heading-four-m);
   line-height: var(--heading-four-m-lh);
+  font-weight: 700;
 }
 
 p {
   font-size: var(--paragraf);
-  margin: var(--spacing-16) 0;
+  margin: var(--spacing-2) 0;
 }
 
 .p-lead {
