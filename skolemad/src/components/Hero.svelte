@@ -27,8 +27,11 @@
   .hero > * {
     margin-top: var(--spacing-2);
   }
-
+  h1,
+  p {
+    text-align: center;
+  }
   div {
-    max-width: 20rem;
+    max-width: 30rem;
   }
 </style>

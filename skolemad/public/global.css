@@ -133,3 +133,38 @@ p {
   font-weight: 700;
   margin-bottom: var(--spacing-4);
 }
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: var(--heading-one);
+    line-height: var(--heading-one-lh);
+    font-weight: 900;
+  }
+  h2 {
+    font-size: var(--heading-two-);
+    line-height: var(--heading-two-lh);
+    font-weight: 700;
+  }
+  h3 {
+    font-size: var(--heading-three);
+    line-height: var(--heading-three-lh);
+    font-weight: 700;
+  }
+  h4 {
+    font-size: var(--heading-four);
+    line-height: var(--heading-four-lh);
+    font-weight: 700;
+  }
+
+  p {
+    font-size: var(--paragraf);
+    margin: var(--spacing-2) 0;
+  }
+
+  .p-lead {
+    font-size: var(--p-lead);
+    line-height: var(--p-lead-lh);
+    font-weight: 700;
+    margin-bottom: var(--spacing-4);
+  }
+}
