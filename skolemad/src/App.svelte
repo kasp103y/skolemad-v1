@@ -3,6 +3,8 @@
   /*  import { Accordion, AccordionItem } from "carbon-components-svelte";
   import Hero from "./components/Hero.svelte";
   import Button from "./components/Button.svelte"; */
+
+  import NavBar from "./NavBar.svelte";
 </script>
 
-<style></style>
+<NavBar />
