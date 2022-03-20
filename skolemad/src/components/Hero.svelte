@@ -1,8 +1,10 @@
 <script>
   import Button from "./Button.svelte";
+  import NavBar from "../NavBar.svelte";
 </script>
 
 <section class="hero">
+  <NavBar />
   <div>
     <h1>SkoleMad</h1>
     <p class="p-lead">
