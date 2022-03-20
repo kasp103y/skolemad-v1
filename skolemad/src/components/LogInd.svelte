@@ -87,7 +87,7 @@
   #login .container #login-row #login-column #login-box {
     margin-top: 120px;
     max-width: 600px;
-    height: 320px;
+    height: 397px;
     border: 1px solid #9c9c9c;
     background-color: var(--box-color);
     border-radius: var(--border-rounded);
@@ -97,7 +97,7 @@
     padding: 20px;
   }
 
-  #login
+  /* #login
     .container
     #login-row
     #login-column
@@ -105,7 +105,7 @@
     #login-form
     #register-link {
     margin-top: -85px;
-  }
+  } */
   #username {
     border-color: #55c000;
   }
