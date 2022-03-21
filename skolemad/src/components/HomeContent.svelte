@@ -56,7 +56,7 @@
 <div>
   <Homeinfo />
   <article>
-    <h2>Fordele for:</h2>
+    <h3>Fordele for:</h3>
     {#each Object.entries(data) as entry}
       <MyAccordion {entry} />
     {/each}

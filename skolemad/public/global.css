@@ -60,7 +60,7 @@
   --heading-six: 1rem;
   --heading-seven: 0.9rem;
   /*Paragraphs*/
-  --p-lead: 1.99rem;
+  --p-lead: 1.414rem;
   --paragraf: 1rem;
   --p-small: 0.9rem;
   /*Line heights*/
@@ -84,14 +84,14 @@ img {
 }
 
 @font-face {
-  font-family: "rubik";
-  src: url(fonts/rubik-variablefont_wght-webfont.woff2);
+  font-family: "heebo";
+  src: url(fonts/heebo-variablefont_wght-webfont.woff);
 }
 
 body {
   color: var(--font);
   background-color: var(--background);
-  font-family: "rubik", sans-serif;
+  font-family: "heebo", sans-serif;
 }
 
 main {
@@ -139,32 +139,37 @@ p {
     font-size: var(--heading-one);
     line-height: var(--heading-one-lh);
     font-weight: 900;
+    margin-bottom: var(--spacing-2);
   }
   h2 {
-    font-size: var(--heading-two-);
+    font-size: var(--heading-two);
     line-height: var(--heading-two-lh);
     font-weight: 700;
+    margin-bottom: var(--spacing-2);
   }
   h3 {
     font-size: var(--heading-three);
     line-height: var(--heading-three-lh);
     font-weight: 700;
+    margin-bottom: var(--spacing-2);
   }
   h4 {
     font-size: var(--heading-four);
     line-height: var(--heading-four-lh);
     font-weight: 700;
+    margin-bottom: var(--spacing-2);
   }
 
   p {
     font-size: var(--paragraf);
-    margin: var(--spacing-2) 0;
+    margin-bottom: var(--spacing-2);
+    line-height: var(--p-lead-m-lh);
   }
 
   .p-lead {
     font-size: var(--p-lead);
     line-height: var(--p-lead-lh);
     font-weight: 700;
-    margin-bottom: var(--spacing-4);
+    margin-bottom: var(--spacing-2);
   }
 }

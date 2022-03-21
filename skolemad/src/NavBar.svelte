@@ -8,8 +8,11 @@
 
 <nav>
   <div>
-    <a href="/">
-      <svg
+    <a class="logo-link" href="/">
+      <div class="bar" />
+      <p class="logo">Skole<span>Mad</span></p>
+
+      <!-- <svg
         width="120"
         height="29.5"
         viewBox="0 0 240 59"
@@ -25,7 +28,7 @@
           fill="#183500"
         />
         <rect y="6" width="10" height="46" rx="5" fill="#183500" />
-      </svg>
+      </svg> -->
     </a>
   </div>
   <ul>
@@ -56,6 +59,19 @@
     padding: var(--spacing-4);
   }
 
+  .logo-link {
+    display: flex;
+    align-content: center;
+  }
+
+  .logo {
+    font-size: var(--heading-five);
+  }
+
+  span {
+    color: var(--font);
+  }
+
   div {
     align-self: center;
   }
@@ -64,6 +80,13 @@
     gap: var(--spacing-4);
     list-style: none;
     display: flex;
+  }
+
+  a svg {
+    transition: ease 250ms;
+  }
+  a svg:hover {
+    filter: brightness(0.1);
   }
   li {
     align-self: center;

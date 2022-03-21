@@ -7,19 +7,18 @@
 </script>
 
 <div>
-  <button on:click={toggle} aria-expanded={isOpen}
-    ><svg
+  <button on:click={toggle} aria-expanded={isOpen}>
+    {entry[0]}<svg
       style="tran"
       width="20"
       height="20"
       fill="none"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="2"
+      stroke-width="6"
       viewBox="0 0 24 24"
       stroke="currentColor"><path d="M9 5l7 7-7 7" /></svg
     >
-    {entry[0]}
   </button>
   {#if isOpen}
     <ul transition:slide={{ duration: 300 }}>
@@ -39,14 +38,20 @@
     border: none;
     background: var(--font);
     color: var(--background);
-    display: block;
+    display: flex;
     border-radius: var(--border-rounded);
-    font-size: 36px;
+    font-size: var(--p-lead);
     cursor: pointer;
+    justify-content: space-between;
+    align-content: center;
 
     padding: var(--spacing-1) var(--spacing-2);
 
     min-width: 30rem;
+  }
+
+  svg {
+    align-self: center;
   }
 
   ul {
