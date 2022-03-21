@@ -9,7 +9,7 @@
 
 <Hero />
 <main>
-  <HomeContent />
+  <section class="center-content"><HomeContent /></section>
 </main>
 
 <style></style>

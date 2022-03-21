@@ -12,7 +12,9 @@
   <section class="hero">
     <div>
       <h1>SkoleMad</h1>
-      <p class="p-lead">Vi står for madpakken, så står du får resten.</p>
+      <p class="p-lead">
+        Vi står for madpakken, så står du for det der virkelig tæller.
+      </p>
       <div class="knapper">
         <Button>Log ind</Button><Button>Opret Bruger</Button>
       </div>

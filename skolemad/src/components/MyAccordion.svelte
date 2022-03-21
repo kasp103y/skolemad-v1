@@ -34,6 +34,10 @@
     margin-bottom: var(--spacing-4);
   }
 
+  ul {
+    max-width: 30rem;
+  }
+
   button {
     border: none;
     background: var(--font);
@@ -62,6 +66,7 @@
     border-radius: var(--border-rounded);
     z-index: -10;
     position: relative;
+    list-style: none;
   }
 
   svg {
