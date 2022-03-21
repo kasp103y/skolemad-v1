@@ -62,9 +62,14 @@
                   />
                 </div>
               </div>
-              <div>
-                <p>Glemt kodeord???????</p>
-                <p>Har du ikke en konto</p>
+              <div class="obs_tekst">
+                <div class="obs_tekst_1">
+                  <p>Glemt kodeord?</p>
+                  <p>Har du ikke en konto</p>
+                </div>
+                <div>
+                  <button> Opret konto</button>
+                </div>
               </div>
             </form>
           </div>
@@ -75,11 +80,33 @@
 </body>
 
 <style>
+  button {
+    background-color: var(--btn-warning);
+    color: black;
+    transition: 0.2s ease;
+    max-width: 15rem;
+    border-radius: var(--border-rounded);
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: var(--p-small-m);
+  }
   body {
     margin: 0;
     padding: 0;
     color: var(--font);
     height: 100vh;
+  }
+  .obs_tekst {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .obs_tekst_1 {
+    display: flex;
+  }
+  .obs_tekst p {
+    padding-right: var(--spacing-1);
   }
   h4 {
     font-size: var(--heading-five-m);
@@ -122,6 +149,7 @@
     border: none;
     cursor: pointer;
     display: inline-block;
+    margin-right: 1rem;
   }
   .anuller_knap {
     color: var(--btn-danger-font);
