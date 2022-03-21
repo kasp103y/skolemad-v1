@@ -1,4 +1,13 @@
 :root {
+  /*Fluid headings**/
+  --font-size-sm: clamp(0.8rem, 0.17vw + 0.76rem, 0.89rem);
+  --font-size-base: clamp(1rem, 0.34vw + 0.91rem, 1.19rem);
+  --font-size-md: clamp(1.25rem, 0.61vw + 1.1rem, 1.58rem);
+  --font-size-lg: clamp(1.56rem, 1vw + 1.31rem, 2.11rem);
+  --font-size-xl: clamp(1.95rem, 1.56vw + 1.56rem, 2.81rem);
+  --font-size-xxl: clamp(2.44rem, 2.38vw + 1.85rem, 3.75rem);
+  --font-size-xxxl: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+
   /*Farver*/
 
   --primary: #55c000;
@@ -48,8 +57,8 @@
   --paragraf-m: 1rem;
   --p-small-m: 0.833rem;
   /*Line heights*/
-  --heading-one-m-lh: 2.6rem;
-  --heading-two-m-lh: 2.2rem;
+  --heading-one-m-lh: 120%;
+  --heading-two-m-lh: 120%;
   --heading-three-m-lh: 1.9rem;
   --p-lead-m-lh: 1.6rem;
   --paragraf-m-lh: 1.4rem;
@@ -84,7 +93,7 @@ img {
 
 * {
   margin: 0;
-  pad: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -107,74 +116,53 @@ main {
 /************Mobil headings******************/
 
 h1 {
-  font-size: var(--heading-one-m);
-  line-height: var(--heading-one-m-lh);
+  font-size: var(--font-size-xxl);
+  line-height: 120%;
   font-weight: 900;
 }
 h2 {
-  font-size: var(--heading-two-m);
-  line-height: var(--heading-two-m-lh);
+  font-size: var(--font-size-xl);
+  line-height: 120%;
   font-weight: 700;
 }
 h3 {
-  font-size: var(--heading-three-m);
-  line-height: var(--heading-three-m-lh);
+  font-size: var(--font-size-lg);
+  line-height: 120%;
   font-weight: 700;
 }
 h4 {
-  font-size: var(--heading-four-m);
-  line-height: var(--heading-four-m-lh);
+  font-size: var(--font-size-md);
+  line-height: 120%;
   font-weight: 700;
 }
 
 p {
-  font-size: var(--paragraf);
+  font-size: var(--font-size-base);
   margin: var(--spacing-2) 0;
+  line-height: 110%;
 }
 
 .p-lead {
-  font-size: var(--p-lead-m);
+  font-size: var(--font-size-md);
   line-height: var(--p-lead-m-lh);
   font-weight: 700;
+  line-height: 110%;
   margin-bottom: var(--spacing-4);
 }
 
 @media screen and (min-width: 800px) {
-  h1 {
-    font-size: var(--heading-one);
-    line-height: var(--heading-one-lh);
-    font-weight: 900;
-    margin-bottom: var(--spacing-2);
-  }
-  h2 {
-    font-size: var(--heading-two);
-    line-height: var(--heading-two-lh);
-    font-weight: 700;
-    margin-bottom: var(--spacing-2);
-  }
-  h3 {
-    font-size: var(--heading-three);
-    line-height: var(--heading-three-lh);
-    font-weight: 700;
-    margin-bottom: var(--spacing-2);
-  }
-  h4 {
-    font-size: var(--heading-four);
-    line-height: var(--heading-four-lh);
-    font-weight: 700;
-    margin-bottom: var(--spacing-2);
+  main {
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+    margin: 0 auto;
+    max-width: none;
   }
 
-  p {
-    font-size: var(--paragraf);
-    margin-bottom: var(--spacing-2);
-    line-height: var(--p-lead-m-lh);
+  .center-content {
+    grid-column-start: 2;
+    margin-top: var(--spacing-16);
   }
-
-  .p-lead {
-    font-size: var(--p-lead);
-    line-height: var(--p-lead-lh);
-    font-weight: 700;
-    margin-bottom: var(--spacing-2);
+  .right-content {
+    grid-column-start: 3;
   }
 }

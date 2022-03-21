@@ -6,12 +6,13 @@
   import LogIndPage from "./pages/LogIndPage.svelte";
 </script>
 
-<nav>
-  <div>
-    <a class="logo-link" href="/">
-      <p class="logo">Skole<span>Mad</span></p>
+<header>
+  <nav>
+    <div>
+      <a class="logo-link" href="/">
+        <p class="logo">Skole<span>Mad</span></p>
 
-      <!-- <svg
+        <!-- <svg
         width="120"
         height="29.5"
         viewBox="0 0 240 59"
@@ -28,29 +29,30 @@
         />
         <rect y="6" width="10" height="46" rx="5" fill="#183500" />
       </svg> -->
-    </a>
-  </div>
-  <!--   <div class="burger">
+      </a>
+    </div>
+    <!--   <div class="burger">
     <div class="bar" />
     <div class="bar" />
     <div class="bar" />
   </div> -->
-  <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="/#/bestil">Bestil</a></li>
-    <li><a href="/#/konto">Konto</a></li>
-    <li><a href="/#/logInd">Log Ind</a></li>
-  </ul>
-</nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/#/bestil">Bestil</a></li>
+      <li><a href="/#/konto">Konto</a></li>
+      <li><a href="/#/logInd">Log Ind</a></li>
+    </ul>
+  </nav>
 
-<Router
-  routes={{
-    "/": Home,
-    "/bestil": Bestil,
-    "/konto": Konto,
-    "/logInd": LogIndPage,
-  }}
-/>
+  <Router
+    routes={{
+      "/": Home,
+      "/bestil": Bestil,
+      "/konto": Konto,
+      "/logInd": LogIndPage,
+    }}
+  />
+</header>
 
 <style>
   /*   ul {
