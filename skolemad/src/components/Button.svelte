@@ -8,11 +8,11 @@
 </div>
 
 <style>
-  div {
+  /* div {
     display: flex;
     justify-content: center;
     margin-top: var(--spacing-4);
-  }
+  } */
   button {
     color: var(--white);
     background-color: var(--primary);
@@ -29,7 +29,7 @@
   }
 
   .primary {
-    background: var(--primary-color);
+    background: var(--primary);
   }
 
   button:hover {
@@ -37,18 +37,24 @@
   }
 
   .secondary {
-    background-color: var(--secondary-color);
+    background-color: var(--secondary);
   }
 
   .accent {
-    background-color: var(--accent-color);
+    background-color: var(--accent);
   }
 
   .ghost {
     background-color: transparent;
-    color: var(--secondary-font-color);
+    color: var(--secondary-font);
   }
 
+  .white {
+    background-color: var(--white);
+    border: var(--primary) var(--border-width-primary) solid;
+    border-radius: var(--border-rounded);
+    color: black;
+  }
   .link {
     background-color: transparent;
     color: var(--link-font-color);
