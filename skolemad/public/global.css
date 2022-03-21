@@ -15,6 +15,10 @@
   --border-rounded: 0.5rem;
   --border-round-full: 999px;
 
+  /* Border-width */
+  --border-width-primary: 1px;
+  --border-width-seconday: 3px;
+
   /*Box-shadow*/
   --shadow-sm: 8px 8px 30px black;
   --shadow-md: 16px 16px 30px black;
@@ -27,6 +31,7 @@
   --spacing-8: 4rem;
   --spacing-16: 8rem;
   --spacing-32: 16rem;
+  --spacing-36: 19rem;
   --spacing-64: 32rem;
 
   /*Mobil*/
