@@ -24,7 +24,7 @@
       </section>
     </section>
   </section>
-  <div class="section right-content"><aside><Menu /></aside></div>
+  <div class="right-content"><aside><Menu /></aside></div>
 </main>
 
 <style>
