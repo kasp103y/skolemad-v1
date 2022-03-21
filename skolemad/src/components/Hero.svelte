@@ -38,7 +38,7 @@
   }
 
   .hero {
-    background-image: url("../barn-mad-1.jpg");
+    background-image: url("../hero-video_Moment.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 90vh;
@@ -87,13 +87,13 @@
 
     .video-hero {
       display: block;
-      background-color: darkgray;
+      background-color: #a8a8a8;
       z-index: -20;
     }
     video {
-      max-height: 90vh;
-      width: 100vw;
       position: relative;
+      height: 90vh;
+      width: 100%;
       z-index: -10;
       mix-blend-mode: multiply;
       overflow: hidden;
