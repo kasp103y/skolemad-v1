@@ -68,6 +68,9 @@
     position: relative;
     list-style: none;
   }
+  li {
+    margin-top: var(--spacing-1);
+  }
 
   svg {
     transition: transform 0.2s ease-in;

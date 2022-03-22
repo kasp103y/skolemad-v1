@@ -31,6 +31,7 @@
     color: var(--background);
     min-height: 100vh;
     display: flex;
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     align-content: center;

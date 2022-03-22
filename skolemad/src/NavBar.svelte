@@ -96,7 +96,7 @@
   }
 
   nav {
-    background-color: var(--primary);
+    background-color: var(--primary-nav);
 
     width: 100vw;
     position: fixed;
@@ -143,7 +143,7 @@
       display: none;
     } */
     nav {
-      background-color: var(--primary);
+      background-color: var(--primary-nav);
       height: 3vh;
       width: 100vw;
       position: fixed;
