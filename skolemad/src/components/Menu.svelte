@@ -1,7 +1,12 @@
 <script></script>
 
-<div>
+<div class=" flex">
   <h3>Aktuel uge</h3>
+  <div class="arrows">
+    <div class="right" />
+    <p>Skift uge</p>
+    <div class="left" />
+  </div>
 
   <ul>
     <li>Mandag: Bananasplit med fyrværkeri og skinke.</li>
@@ -26,7 +31,7 @@
 </div>
 
 <style>
-  div {
+  .flex {
     background-color: var(--accent);
     color: var(--background);
     min-height: 100vh;
@@ -37,6 +42,28 @@
     align-content: center;
     align-items: center;
     padding: var(--spacing-4);
+  }
+  .arrows {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+    align-content: center;
+    align-items: center;
+  }
+  .right,
+  .left {
+    width: 1rem;
+    height: 1rem;
+    border-left: var(--border-width-primary) solid var(--background);
+    border-top: var(--border-width-primary) solid var(--background);
+  }
+
+  .right {
+    transform: rotate(-45deg);
+  }
+
+  .left {
+    transform: rotate(135deg);
   }
   ul {
     margin-top: var(--spacing-4);
