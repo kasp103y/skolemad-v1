@@ -45,7 +45,17 @@
     color: var(--font);
   }
 
-  .ghost {
+  .danger {
+    background-color: var(--btn-danger);
+    color: var(--btn-danger-font);
+  }
+
+  .warning {
+    background-color: var(--btn-warning);
+    color: var(--font);
+  }
+
+  /*  .ghost {
     background-color: transparent;
     color: var(--secondary-font);
   }
@@ -64,5 +74,5 @@
   .primary.inversed {
     background-color: var(--primary-font-color);
     color: var(--link-font-color);
-  }
+  } */
 </style>
