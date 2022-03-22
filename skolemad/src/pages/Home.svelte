@@ -5,11 +5,13 @@
   import HomeContent from "../components/HomeContent.svelte";
   import HomeInfo from "../components/Homeinfo.svelte";
   import Homeinfo from "../components/Homeinfo.svelte";
+  import Footer from "../components/Footer.svelte";
 </script>
 
 <Hero />
 <main>
   <section class="center-content"><HomeContent /></section>
 </main>
+<Footer />
 
 <style></style>
