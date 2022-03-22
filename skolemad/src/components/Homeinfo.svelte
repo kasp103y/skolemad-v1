@@ -11,10 +11,6 @@
     og kommuner. Prisen er lav, og prislisten er åben og ærlig. Systemet er det
     første og det mest udbredte og af sin slags.
   </p>
-  <p class="p-lead">
-    Det benyttes over hele landet af 396 skoler, institutioner, firmaer m.fl.,
-    51 køkkener og 141.731 brugere.
-  </p>
 
   <p>
     Systemet har i den forløbne uge ekspederet 64.848 portioner, og de sidste to

@@ -1,5 +1,6 @@
 <script>
   import Button from "./Button.svelte";
+  import Proof from "./Proof.svelte";
 </script>
 
 <section class="wrapper">
@@ -16,10 +17,18 @@
         Vi står for madpakken, så står du for det der virkelig tæller.
       </p>
       <div class="knapper">
-        <Button>Log ind</Button><Button>Opret Bruger</Button>
+        <Button>Log ind</Button><Button type="accent">Opret Bruger</Button>
       </div>
       <div class="arrow" />
     </div>
+  </section>
+  <section class="proof">
+    <p class="p-lead-white">SkoleMad bruges af:</p>
+    <article class="proofs">
+      <Proof>396 instutitioner</Proof>
+      <Proof>51 køkkener</Proof>
+      <Proof>141.731 brugere</Proof>
+    </article>
   </section>
 </section>
 
@@ -66,6 +75,10 @@
     display: none;
   }
 
+  .proof {
+    display: none;
+  }
+
   @media screen and (min-width: 800px) {
     .knapper {
       justify-content: start;
@@ -73,6 +86,19 @@
     h1,
     p {
       text-align: left;
+    }
+
+    .proof {
+      display: block;
+      grid-area: 1/1;
+      justify-self: center;
+      align-self: end;
+      margin: var(--spacing-4) 0;
+    }
+
+    .proofs {
+      display: flex;
+      gap: var(--spacing-4);
     }
     .hero {
       background-image: none;
@@ -85,6 +111,18 @@
     .video-hero,
     .hero {
       grid-area: 1/1;
+    }
+
+    .proof {
+      grid-area: 1/1;
+      justify-self: center;
+      align-self: end;
+      margin: var(--spacing-4) 0;
+    }
+
+    .proofs {
+      display: flex;
+      gap: var(--spacing-4);
     }
 
     .video-hero {
