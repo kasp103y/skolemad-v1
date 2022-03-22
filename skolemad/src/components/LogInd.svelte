@@ -1,3 +1,9 @@
+<script>
+  import Router, { location, link } from "svelte-spa-router";
+  import Konto from "../pages/Konto.svelte";
+  import Button from "./Button.svelte";
+</script>
+
 <head
   ><link
     href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
@@ -77,6 +83,12 @@
       </div>
     </div>
   </div>
+  <Button><a href="/#/konto">LINK</a></Button>
+  <Router
+    routes={{
+      "/konto": Konto,
+    }}
+  />
 </body>
 
 <style>

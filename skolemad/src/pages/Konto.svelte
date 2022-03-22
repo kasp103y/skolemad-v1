@@ -7,6 +7,7 @@
   import BestillingerValg from "../components/BestillingerValg.svelte";
   import BestilingOversigt from "../components/BestilingOversigt.svelte";
   import KontoUdtog from "../components/KontoUdtog.svelte";
+  import TabelKontoUdtog from "../components/TabelKontoUdtog.svelte";
 </script>
 
 <main>
