@@ -13,7 +13,7 @@
 
 <style>
   .box {
-    margin: var(--spacing-8);
+    margin: var(--spacing-4);
     background-color: var(--white);
     border: var(--primary) var(--border-width-primary) solid;
     border-radius: var(--border-rounded);

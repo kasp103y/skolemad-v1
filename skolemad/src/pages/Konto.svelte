@@ -9,24 +9,29 @@
   import KontoUdtog from "../components/KontoUdtog.svelte";
 </script>
 
-<div class="flex_1">
-  <FamilieInfoBox />
-  <KontoInfobox />
-</div>
+<main>
+  <section class="center-content">
+    <div class="flex_1">
+      <FamilieInfoBox />
+      <KontoInfobox />
+    </div>
 
-<div class="flex_2">
-  <div class="knapperX4">
-    <BestillingerValg><a href="/#/bestil">Bestil mad</a></BestillingerValg>
-    <BestillingerValg><a href="/#/bestil">Afbestilling</a></BestillingerValg>
-    <BestilingOversigt />
-    <KontoUdtog />
-    <Router
-      routes={{
-        "/bestil": Bestil,
-      }}
-    />
-  </div>
-</div>
+    <div class="flex_2">
+      <div class="knapperX4">
+        <BestillingerValg><a href="/#/bestil">Bestil mad</a></BestillingerValg>
+        <BestillingerValg><a href="/#/bestil">Afbestilling</a></BestillingerValg
+        >
+        <BestilingOversigt />
+        <KontoUdtog />
+        <Router
+          routes={{
+            "/bestil": Bestil,
+          }}
+        />
+      </div>
+    </div>
+  </section>
+</main>
 
 <style>
   .knapperX4 {
