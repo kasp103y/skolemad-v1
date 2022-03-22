@@ -20,6 +20,7 @@
 <style>
   p {
     margin: 0;
+    padding-bottom: var(--spacing-2);
   }
   .value {
     font-weight: bolder;
@@ -44,11 +45,11 @@
     padding-right: 2rem;
   } */
   .box {
-    margin: 5rem;
+    margin: var(--spacing-8);
     background-color: var(--box-color);
 
     border-radius: var(--border-rounded);
-    padding: var(--spacing-2);
-    /* width: var(--spacing-36); */
+    padding: var(--spacing-4);
+    width: 25rem;
   }
 </style>

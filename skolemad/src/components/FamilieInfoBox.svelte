@@ -13,12 +13,12 @@
 
 <style>
   .box {
-    margin: 5rem;
+    margin: var(--spacing-8);
     background-color: var(--white);
     border: var(--primary) var(--border-width-primary) solid;
     border-radius: var(--border-rounded);
-    padding: var(--spacing-2);
-    width: var(--spacing-36);
+    padding: var(--spacing-4);
+    width: var(--spacing-64);
   }
   .kids_value {
     padding-bottom: var(--spacing-2);
