@@ -19,13 +19,15 @@
       </article>
     </section>
     <section class="bestil-menu">
-      <section class="menu">
-        <MenuValg>Normal menu - 300 kr</MenuValg>
-        <MenuValg>Vegetar menu - 300 kr</MenuValg>
-        <MenuValg>Halal menu - 300 kr</MenuValg>
-      </section>
-      <section class="knapper">
-        <Button>Bestil</Button>
+      <section>
+        <section class="menu">
+          <MenuValg>Normal menu - 300 kr</MenuValg>
+          <MenuValg>Vegetar menu - 300 kr</MenuValg>
+          <MenuValg>Halal menu - 300 kr</MenuValg>
+        </section>
+        <section class="knapper">
+          <Button>Bestil</Button>
+        </section>
       </section>
       <section class="Konto">
         <KontoInfoBox />
@@ -38,5 +40,9 @@
 <style>
   .knapper {
     margin-top: var(--spacing-4);
+  }
+
+  .bestil-menu {
+    display: flex;
   }
 </style>

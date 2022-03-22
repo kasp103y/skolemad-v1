@@ -45,7 +45,7 @@
     padding-right: 2rem;
   } */
   .box {
-    margin: var(--spacing-8);
+    margin-left: var(--spacing-8);
     background-color: var(--box-color);
 
     border-radius: var(--border-rounded);

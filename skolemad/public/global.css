@@ -11,7 +11,7 @@
   /*Farver*/
 
   --primary: #55c000;
-  --primary-nav: #55c000;
+  --primary-nav: #56c000a6;
   --background: #f2f6ee;
   --box-color: #e7f3de;
   --accent: #7a9460;
@@ -26,8 +26,8 @@
   --border-round-full: 999px;
 
   /* Border-width */
-  --border-width-primary: 1px;
-  --border-width-seconday: 3px;
+  --border-width-primary: 3px;
+  --border-width-seconday: 6px;
 
   /*Box-shadow*/
   --shadow-sm: 8px 8px 30px black;
@@ -149,6 +149,15 @@ p {
   font-weight: 700;
   line-height: 110%;
   margin-bottom: var(--spacing-4);
+}
+
+.p-lead-white {
+  font-size: var(--font-size-md);
+  line-height: var(--p-lead-m-lh);
+  font-weight: 700;
+  line-height: 110%;
+  margin-bottom: var(--spacing-4);
+  color: var(--background);
 }
 
 @media screen and (min-width: 800px) {

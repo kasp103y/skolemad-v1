@@ -15,7 +15,7 @@
   } */
   button {
     color: var(--white);
-    background-color: var(--primary);
+    background-color: rgb(34, 199, 171);
     transition: 0.2s ease;
     padding: var(--spacing-2) var(--spacing-4);
     max-width: 15rem;
@@ -41,7 +41,8 @@
   }
 
   .accent {
-    background-color: var(--accent);
+    background-color: var(--box-color);
+    color: var(--font);
   }
 
   .ghost {
