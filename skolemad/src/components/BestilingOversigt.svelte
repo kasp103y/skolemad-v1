@@ -50,7 +50,7 @@
       </div>
       <p>10/1-22 - 1/4-22</p>
       <table>
-        <tr>
+        <tr class="head_info">
           <th>Dato</th>
           <th>Betalingsform</th>
           <th>Beløb <br /> kr</th>
@@ -62,7 +62,7 @@
           <td>408.00</td>
           <td>408.00</td>
         </tr>
-        <tr>
+        <tr class="farve">
           <td>28/2-21 (bestilt 26/1-21)</td>
           <td>Begitte - Køb februar</td>
           <td>-230.00</td>
@@ -75,7 +75,7 @@
           <td>900.00</td>
           <td>1078.00</td>
         </tr>
-        <tr>
+        <tr class="farve">
           <td>5/4-21 (bestilt 14/3-21)</td>
           <td>Begitte - Køb April</td>
           <td>-414.00</td>
@@ -88,7 +88,7 @@
           <td>250.00</td>
         </tr>
 
-        <tr>
+        <tr class="farve">
           <td>21/4-21</td>
           <td> Indbetalt - Dankort</td>
           <td>800.00</td>
@@ -100,7 +100,7 @@
           <td>-299.00</td>
           <td>751.00</td>
         </tr>
-        <tr>
+        <tr class="farve">
           <td>1/5-21 (bestilt 25/5-21)</td>
           <td>Begitte - Køb Maj</td>
           <td>-299.00</td>
@@ -112,6 +112,25 @@
 </div>
 
 <style>
+  .head_info {
+    background-color: silver;
+  }
+  .farve {
+    background-color: ghostwhite;
+  }
+  input {
+    color: var(--font);
+
+    transition: 0.2s ease;
+    max-width: 15rem;
+    border: 3px solid green;
+    text-transform: uppercase;
+    border-radius: var(--border-rounded);
+    border: none;
+    font-weight: 800;
+    cursor: pointer;
+    display: inline-block;
+  }
   td {
     padding: 0.5rem;
   }
@@ -122,6 +141,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-block: var(--spacing-2);
   }
   .luk_knap {
     height: 0;
@@ -168,11 +188,7 @@
     width: 3rem;
     height: 1.5rem;
   }
-  table,
-  th,
-  td {
-    border: 1px solid var(--primary);
-  }
+
   .flex {
     display: flex;
     flex-wrap: wrap;
