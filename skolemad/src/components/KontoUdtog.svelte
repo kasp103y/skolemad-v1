@@ -80,6 +80,24 @@
 </div>
 
 <style>
+  #pop_up_2 {
+    z-index: 10;
+    display: none;
+    position: relative;
+    top: -38.3rem;
+    background-color: rgba(0, 0, 0, 0.452);
+    height: 100vh;
+    width: 174vh;
+  }
+  .pop_up_style_2 {
+    background-color: var(--box-color);
+    width: 36rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    position: absolute;
+    top: 3rem;
+    left: 28rem;
+  }
   .head_info {
     background-color: silver;
   }
@@ -134,18 +152,7 @@
   .luk_knap_2:hover {
     color: red;
   }
-  .pop_up_style_2 {
-    background-color: var(--box-color);
-    width: fit-content;
-    padding: 2rem;
-    margin-top: 2rem;
-  }
-  #pop_up_2 {
-    display: none;
-    position: absolute;
-    top: 9rem;
-    left: 30%;
-  }
+
   .luk_knap_2 {
     height: 0;
     width: 0;
