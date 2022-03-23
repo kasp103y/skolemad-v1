@@ -1,4 +1,9 @@
-<script></script>
+<script>
+  import Router, { location, link } from "svelte-spa-router";
+
+  import LogInd from "../components/LogInd.svelte";
+  import Button from "../components/Button.svelte";
+</script>
 
 <head>
   <link
@@ -32,20 +37,14 @@
               </div>
 
               <div class="form-group">
-                <div>
-                  <input
-                    type="submit"
-                    name="submit"
-                    class="submit_knap btn btn-info btn-md"
-                    value="Send mail"
-                  />
+                <div class="flex">
+                  <Button>
+                    <a href="/#/logind">Send mail</a>
+                  </Button>
 
-                  <input
-                    type="submit"
-                    name="submit"
-                    class="anuller_knap btn btn-info btn-md"
-                    value="Anunller"
-                  />
+                  <Button type="danger">
+                    <a href="/#/logind">Anuller</a>
+                  </Button>
                 </div>
               </div>
             </form>
@@ -54,10 +53,28 @@
       </div>
     </div>
   </div>
+
+  <Router
+    routes={{
+      "/login": LogInd,
+    }}
+  />
 </body>
 
 <style>
-  button {
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: 250ms ease;
+  }
+  a:hover {
+    color: var(--primary);
+  }
+  /* button {
     background-color: var(--btn-warning);
     color: black;
     transition: 0.2s ease;
@@ -67,7 +84,7 @@
     cursor: pointer;
     display: inline-block;
     font-size: var(--p-small-m);
-  }
+  } */
   body {
     margin: 0;
     padding: 0;
@@ -91,7 +108,7 @@
   #login .container #login-row #login-column #login-box {
     margin-top: 120px;
     max-width: 600px;
-    height: 262px;
+    height: 275px;
     border: 1px solid #9c9c9c;
     background-color: var(--box-color);
     border-radius: var(--border-rounded);

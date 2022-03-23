@@ -24,6 +24,7 @@
 
       <li class="hidden"><a href="/#/opret">OPret</a></li>
       <li class="hidden"><a href="/#/glemt">glemt</a></li>
+      <li class="hidden"><a href="/#/home">glemt</a></li>
     </ul>
   </nav>
 
@@ -35,6 +36,7 @@
       "/logInd": LogIndPage,
       "/opret": OpretBrugerPage,
       "/glemt": GlemtKodeOrd,
+      "/home": Home,
     }}
   />
 </header>

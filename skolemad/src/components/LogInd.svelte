@@ -4,6 +4,7 @@
   import Button from "./Button.svelte";
   import OpretBrugerPage from "../pages/OpretBrugerPage.svelte";
   import GlemtKodeOrd from "../pages/GlemtKodeOrd.svelte";
+  import Home from "../pages/Home.svelte";
 </script>
 
 <head>
@@ -56,19 +57,14 @@
                     /></span
                   ></label
                 ><br />
-                <div>
-                  <input
-                    type="submit"
-                    name="submit"
-                    class="submit_knap btn btn-info btn-md"
-                    value="Log ind"
-                  />
-                  <input
-                    type="submit"
-                    name="submit"
-                    class="anuller_knap btn btn-info btn-md"
-                    value="Anunller"
-                  />
+                <div class="flex">
+                  <Button>
+                    <a href="/#/konto">Login</a>
+                  </Button>
+
+                  <Button type="danger">
+                    <a href="/#/home">Anuller</a>
+                  </Button>
                 </div>
               </div>
 
@@ -87,17 +83,21 @@
       </div>
     </div>
   </div>
-  <Button><a href="/#/konto">LINK</a></Button>
   <Router
     routes={{
       "/konto": Konto,
       "/opret": OpretBrugerPage,
       "/glemt": GlemtKodeOrd,
+      "/home": Home,
     }}
   />
 </body>
 
 <style>
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
   button {
     background-color: var(--btn-warning);
     color: black;
@@ -108,6 +108,7 @@
     cursor: pointer;
     display: inline-block;
     font-size: var(--p-small-m);
+    padding-inline: var(--spacing-2);
   }
   body {
     margin: 0;
@@ -131,7 +132,7 @@
   #login .container #login-row #login-column #login-box {
     margin-top: 120px;
     max-width: 600px;
-    height: 397px;
+    height: 420px;
     border: 1px solid #9c9c9c;
     background-color: var(--box-color);
     border-radius: var(--border-rounded);
@@ -139,6 +140,15 @@
   }
   #login .container #login-row #login-column #login-box #login-form {
     padding: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: 250ms ease;
+  }
+  a:hover {
+    color: var(--primary);
   }
 
   /* #login

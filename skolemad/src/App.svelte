@@ -3,10 +3,11 @@
   /*  import { Accordion, AccordionItem } from "carbon-components-svelte";
   import Hero from "./components/Hero.svelte";
   import Button from "./components/Button.svelte"; */
-
+  import Footer from "./components/Footer.svelte";
   import NavBar from "./NavBar.svelte";
 </script>
 
 <NavBar />
+<Footer />
 
 <style></style>

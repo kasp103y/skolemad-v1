@@ -1,4 +1,8 @@
 <script>
+  import Router, { location, link } from "svelte-spa-router";
+  import Konto from "./Konto.svelte";
+  import LogInd from "../components/LogInd.svelte";
+  import Button from "../components/Button.svelte";
 </script>
 
 <head>
@@ -49,20 +53,16 @@
                 />
               </div>
               <div class="form-group">
-                <div>
-                  <input
-                    type="submit"
-                    name="submit"
-                    class="submit_knap btn btn-info btn-md"
-                    value="Opret bruger"
-                  />
+                <div class="form-group">
+                  <div class="flex">
+                    <Button>
+                      <a href="/#/konto">Opret bruger</a>
+                    </Button>
 
-                  <input
-                    type="submit"
-                    name="submit"
-                    class="anuller_knap btn btn-info btn-md"
-                    value="Anunller"
-                  />
+                    <Button type="danger">
+                      <a href="/#/logind">Anuller</a>
+                    </Button>
+                  </div>
                 </div>
               </div>
             </form>
@@ -71,19 +71,26 @@
       </div>
     </div>
   </div>
+  <Router
+    routes={{
+      "/login": LogInd,
+      "/konto": Konto,
+    }}
+  />
 </body>
 
 <style>
-  button {
-    background-color: var(--btn-warning);
-    color: black;
-    transition: 0.2s ease;
-    max-width: 15rem;
-    border-radius: var(--border-rounded);
-    border: none;
-    cursor: pointer;
-    display: inline-block;
-    font-size: var(--p-small-m);
+  .flex {
+    display: flex;
+    gap: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: 250ms ease;
+  }
+  a:hover {
+    color: var(--primary);
   }
   body {
     margin: 0;

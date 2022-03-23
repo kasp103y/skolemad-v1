@@ -28,7 +28,7 @@
     <div class="pop_up_style_2">
       <button class="luk_knap_2">X</button>
       <p>Forløbigt Kontoudtog famile Nitten</p>
-      <div class="flex">
+      <div class="flex_1">
         <div>
           <label for="fname">Fra:</label>
           <input type="text" />
@@ -50,7 +50,7 @@
       </div>
       <p>10/1-22 - 1/4-22</p>
       <table>
-        <tr>
+        <tr class="head_info">
           <th>Dato</th>
           <th>Betalingsform</th>
           <th>Beløb <br /> kr</th>
@@ -62,7 +62,7 @@
           <td>234.00</td>
           <td>234.00</td>
         </tr>
-        <tr>
+        <tr class="farve">
           <td>11/3-22</td>
           <td>Mobilpay 6 23846: 6-1212345</td>
           <td>234.00</td>
@@ -80,6 +80,12 @@
 </div>
 
 <style>
+  .head_info {
+    background-color: silver;
+  }
+  .farve {
+    background-color: ghostwhite;
+  }
   td {
     padding: 0.5rem;
   }
@@ -93,20 +99,13 @@
     width: 3rem;
     height: 1.5rem;
   }
-  table,
-  th,
-  td {
-    border: 1px solid var(--primary);
-  }
-  .flex {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .flex {
+
+  .flex_1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
+    padding-block: var(--spacing-2);
   }
   button {
     height: 4rem;
