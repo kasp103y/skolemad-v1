@@ -270,7 +270,7 @@
     padding-right: 2rem;
   } */
   .box {
-    margin-left: var(--spacing-8);
+    /*  margin-left: var(--spacing-8); */
     background-color: var(--box-color);
     /*  display: flex;
     flex-direction: column;

@@ -17,7 +17,7 @@
         Vi står for madpakken, så står du for det der virkelig tæller.
       </p>
       <div class="knapper">
-        <Button>Log ind</Button><Button type="accent">Opret Bruger</Button>
+        <Button>Log ind</Button><Button type="secondary">Opret Bruger</Button>
       </div>
       <div class="arrow" />
     </div>

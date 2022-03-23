@@ -12,6 +12,5 @@
 <main>
   <section class="center-content"><HomeContent /></section>
 </main>
-<Footer />
 
 <style></style>

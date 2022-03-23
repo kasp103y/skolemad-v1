@@ -35,7 +35,7 @@
   }
 
   ul {
-    max-width: 30rem;
+    max-width: 40rem;
   }
 
   button {
@@ -51,7 +51,7 @@
 
     padding: var(--spacing-1) var(--spacing-2);
 
-    min-width: 30rem;
+    min-width: 20rem;
   }
 
   svg {

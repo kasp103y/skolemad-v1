@@ -42,6 +42,7 @@
     align-content: center;
     align-items: center;
     padding: var(--spacing-4);
+    z-index: -1;
   }
   .arrows {
     display: flex;

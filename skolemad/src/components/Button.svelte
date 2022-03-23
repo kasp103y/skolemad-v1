@@ -37,7 +37,10 @@
   }
 
   .secondary {
-    background-color: var(--secondary);
+    background-color: transparent;
+    border: var(--border-width-primary) solid rgb(34, 199, 171);
+
+    color: rgb(34, 199, 171);
   }
 
   .accent {
