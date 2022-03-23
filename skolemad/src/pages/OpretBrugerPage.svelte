@@ -1,13 +1,7 @@
 <script>
-  import Router, { location, link } from "svelte-spa-router";
-  import Konto from "../pages/Konto.svelte";
-  import Button from "./Button.svelte";
-  import OpretBrugerPage from "../pages/OpretBrugerPage.svelte";
-  import GlemtKodeOrd from "../pages/GlemtKodeOrd.svelte";
 </script>
 
 <head>
-  <!-- svelte-ignore component-name-lowercase -->
   <link
     href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     rel="stylesheet"
@@ -26,7 +20,7 @@
         <div id="login-column" class="col-md-6">
           <div id="login-box" class="col-md-12">
             <form id="login-form" class="form" action="" method="post">
-              <h4>Log ind på SkoleMad</h4>
+              <h4>Opret bruger på SkoleMad</h4>
               <div class="form-group">
                 <label for="username">Brugernavn/id:</label><br />
                 <input
@@ -46,23 +40,23 @@
                 />
               </div>
               <div class="form-group">
-                <label for="remember-me"
-                  ><span>Husk mig</span>
-                  <span
-                    ><input
-                      id="remember-me"
-                      name="remember-me"
-                      type="checkbox"
-                    /></span
-                  ></label
-                ><br />
+                <label for="password">Gentag kodeord:</label><br />
+                <input
+                  type="text"
+                  name="password"
+                  id="password"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
                 <div>
                   <input
                     type="submit"
                     name="submit"
                     class="submit_knap btn btn-info btn-md"
-                    value="Log ind"
+                    value="Opret bruger"
                   />
+
                   <input
                     type="submit"
                     name="submit"
@@ -71,30 +65,12 @@
                   />
                 </div>
               </div>
-
-              <div>
-                <a href="/#/glemt">Glemt kodeord?</a>
-              </div>
-              <div class="obs_tekst_1">
-                <p>Har du ikke en konto</p>
-                <button>
-                  <a href="/#/opret">Opret bruger</a>
-                </button>
-              </div>
             </form>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <Button><a href="/#/konto">LINK</a></Button>
-  <Router
-    routes={{
-      "/konto": Konto,
-      "/opret": OpretBrugerPage,
-      "/glemt": GlemtKodeOrd,
-    }}
-  />
 </body>
 
 <style>
@@ -115,13 +91,14 @@
     color: var(--font);
     height: 100vh;
   }
-  .obs_tekst_1 {
-    padding-top: var(--spacing-1);
+  .obs_tekst {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-
+  .obs_tekst_1 {
+    display: flex;
+  }
   .obs_tekst p {
     padding-right: var(--spacing-1);
   }
