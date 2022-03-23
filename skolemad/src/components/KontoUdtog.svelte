@@ -109,7 +109,7 @@
   }
   .open_pop_2 {
     height: 4rem;
-    width: 20rem;
+    width: 12rem;
     padding: var(--spacing-2) var(--spacing-4);
     background-color: var(--background);
     border: var(--border-width-seconday) solid var(--primary);
@@ -143,8 +143,8 @@
   #pop_up_2 {
     display: none;
     position: absolute;
-    top: 37rem;
-    left: 45rem;
+    top: 9rem;
+    left: 30%;
   }
   .luk_knap_2 {
     height: 0;

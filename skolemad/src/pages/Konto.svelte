@@ -15,38 +15,41 @@
       <FamilieInfoBox />
       <KontoInfobox />
     </div>
-
-    <div class="flex_2">
-      <div class="knapperX4">
-        <BestillingerValg><a href="/#/bestil">Bestil mad</a></BestillingerValg>
-        <BestillingerValg><a href="/#/bestil">Afbestilling</a></BestillingerValg
-        >
-        <BestillingerValg>Afmeld Betalingsservice</BestillingerValg>
-        <BestillingerValg>Skift kodeord</BestillingerValg>
-        <BestilingOversigt />
-        <KontoUdtog />
-        <Router
-          routes={{
-            "/bestil": Bestil,
-          }}
-        />
-      </div>
+  </section>
+  <section class="funktioner">
+    <div class="funktioner_knapper">
+      <BestillingerValg><a href="/#/bestil">Bestil mad</a></BestillingerValg>
+      <BestillingerValg><a href="/#/bestil">Afbestilling</a></BestillingerValg>
+      <BestillingerValg>Afmeld Betalingsservice</BestillingerValg>
+      <BestillingerValg>Skift kodeord</BestillingerValg>
+      <BestilingOversigt />
+      <KontoUdtog />
+      <Router
+        routes={{
+          "/bestil": Bestil,
+        }}
+      />
     </div>
   </section>
 </main>
 
 <style>
-  .knapperX4 {
-    margin: var(--spacing-8);
+  .funktioner {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: var(--spacing-16);
   }
+
   .flex_1 {
     padding-top: var(--spacing-8);
     display: flex;
     justify-content: space-between;
   }
-  .flex_2 {
-    display: flex;
-    justify-content: space-between;
+  .funktioner_knapper {
+    display: grid;
+    justify-items: start;
+    padding-left: var(--spacing-1);
+    padding-top: 3rem;
   }
   a {
     text-decoration: none;
