@@ -1,6 +1,9 @@
 <script>
   import Button from "./Button.svelte";
   let amount = "500kr";
+  function handleClick() {
+    alert("Penge indsat på konto");
+  }
 </script>
 
 <div class="box">
@@ -9,7 +12,7 @@
   <div class="button_flex">
     <p>Indsæt penge på konto</p>
     <input type="number" />
-    <Button type="submit">Indsæt penge</Button>
+    <Button on:click|once={handleClick} type="submit">Indsæt penge</Button>
   </div>
   <div class="service_info">
     <div class="betalingsservice">

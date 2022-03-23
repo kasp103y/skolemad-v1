@@ -1,10 +1,17 @@
 <script>
   export let type = "default";
   export let mode = "default";
+  function handleClick() {
+    alert("Det du havde tænkt at gøre er gjort nu succesfyldt");
+  }
 </script>
 
 <div>
-  <button class:inversed={mode === "inversed"} class={type}><slot /></button>
+  <button
+    on:click={handleClick}
+    class:inversed={mode === "inversed"}
+    class={type}><slot /></button
+  >
 </div>
 
 <style>
