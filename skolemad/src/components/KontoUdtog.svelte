@@ -107,7 +107,7 @@
     gap: 20px;
     padding-block: var(--spacing-2);
   }
-  button {
+  .open_pop_2 {
     height: 4rem;
     width: 20rem;
     padding: var(--spacing-2) var(--spacing-4);
@@ -122,9 +122,17 @@
     font-weight: 800;
   }
 
-  button:hover {
+  .open_pop_2:hover {
     background-color: var(--font);
     color: var(--background);
+  }
+  .luk_knap_2 {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .luk_knap_2:hover {
+    color: red;
   }
   .pop_up_style_2 {
     background-color: var(--box-color);

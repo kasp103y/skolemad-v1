@@ -149,8 +149,15 @@
     background-color: none;
     border: none;
   }
-
-  button {
+  .luk_knap {
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: larger;
+  }
+  .luk_knap:hover {
+    color: red;
+  }
+  .open_pop {
     height: 4rem;
     width: 20rem;
     padding: var(--spacing-2) var(--spacing-4);
@@ -165,7 +172,7 @@
     font-weight: 800;
   }
 
-  button:hover {
+  .open_pop:hover {
     background-color: var(--font);
     color: var(--background);
   }
