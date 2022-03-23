@@ -41,8 +41,8 @@
   }
 
   .accent {
-    background-color: var(--box-color);
-    color: var(--font);
+    background-color: var(--accent);
+    color: var(--background);
   }
 
   .danger {
