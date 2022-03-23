@@ -37,7 +37,7 @@
     <div class="bar" />
   </div> -->
     <ul>
-      <li><a href="/">Home</a></li>
+      <li><a href="/">Forside</a></li>
       <li><a href="/#/bestil">Bestil</a></li>
       <li><a href="/#/konto">Konto</a></li>
       <li><a href="/#/logInd">Log Ind</a></li>
