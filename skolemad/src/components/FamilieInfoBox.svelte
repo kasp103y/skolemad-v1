@@ -1,4 +1,6 @@
-<script></script>
+<script>
+  import Button from "./Button.svelte";
+</script>
 
 <div class="box">
   <p class="header">Familie Nitten</p>
@@ -9,6 +11,7 @@
   <p class="value">Børn:</p>
   <p class="kids_value">Bigitte Nitten - 8år - 3.X</p>
   <p>Bitten Nitten - 15år - 9.Ø</p>
+  <Button>Tilføj barn</Button>
 </div>
 
 <style>
