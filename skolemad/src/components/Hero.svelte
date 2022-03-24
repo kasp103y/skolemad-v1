@@ -1,4 +1,8 @@
 <script>
+  import Router, { location, link } from "svelte-spa-router";
+  import LogInd from "./LogInd.svelte";
+  import OpretBrugerPage from "../pages/OpretBrugerPage.svelte";
+
   import Button from "./Button.svelte";
   import Proof from "./Proof.svelte";
 </script>
@@ -17,7 +21,8 @@
         Vi står for madpakken, så står du for det der virkelig tæller.
       </p>
       <div class="knapper">
-        <Button>Log ind</Button><Button type="secondary">Opret Bruger</Button>
+        <Button><a href="/#/logind">Login</a></Button>
+        <Button type="secondary"><a href="/#/opret">Opret bruger</a></Button>
       </div>
       <div class="arrow" />
     </div>
@@ -30,6 +35,12 @@
       <Proof>141.731 brugere</Proof>
     </article>
   </section>
+  <Router
+    routes={{
+      "/logind": LogInd,
+      "/opret": OpretBrugerPage,
+    }}
+  />
 </section>
 
 <style>

@@ -97,6 +97,7 @@
     position: absolute;
     top: 3rem;
     left: 28rem;
+    border-radius: var(--border-rounded);
   }
   .head_info {
     background-color: silver;

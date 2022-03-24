@@ -117,7 +117,7 @@
     position: relative;
     top: -33.7rem;
     background-color: rgba(0, 0, 0, 0.452);
-    height: 155vh;
+    height: 110vh;
     width: 174vh;
   }
   .pop_up_style {
@@ -128,6 +128,7 @@
     position: absolute;
     top: 3rem;
     left: 28rem;
+    border-radius: var(--border-rounded);
   }
   .head_info {
     background-color: silver;
