@@ -4,11 +4,16 @@
   import Button from "../components/Button.svelte";
   import Menu from "../components/Menu.svelte";
   import KontoInfoBox from "../components/KontoInfoBox.svelte";
+
   const data = {
-    "Vælg barn": ["Nitten Bittensen", "Bitten Bittensen"],
+    "Vælg barn": [
+      "Nitten Bittensen",
+      "Bitten Bittensen",
+      "Bestil for alle børn",
+    ],
   };
   const dataTo = {
-    "Vælg måned": [
+    Marts: [
       "Jan",
       "Feb",
       "Mar",
@@ -22,8 +27,6 @@
       "Dec",
     ],
   };
-
-  let month = "Marts";
 </script>
 
 <main>
@@ -35,13 +38,18 @@
             <MyAccordion {entry} />
           {/each}
         </article>
+      </section>
+      '
+      <article class="header">
+        <h3>Bestil for</h3>
         <article>
           {#each Object.entries(dataTo) as entry}
-            <MyAccordion {entry} />
+            <MyAccordion type="month" {entry} />
           {/each}
         </article>
-      </section>
-      <h2>Bestil for {month} måned</h2>
+        <h3>måned</h3>
+      </article>
+
       <section class="bestil-menu">
         <section>
           <section class="menu">
@@ -67,6 +75,10 @@
 </main>
 
 <style>
+  .header {
+    display: flex;
+    align-content: center;
+  }
   .knapper {
     margin-top: var(--spacing-4);
   }

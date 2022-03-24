@@ -34,14 +34,15 @@
   .flex {
     background-color: var(--accent);
     color: var(--background);
-    min-height: 100vh;
+    height: 100%;
     display: flex;
+    width: max-content;
     position: fixed;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding: var(--spacing-4);
+    padding: var(--spacing-8) var(--spacing-2);
     z-index: -1;
   }
   .arrows {
@@ -68,5 +69,6 @@
   }
   ul {
     margin-top: var(--spacing-4);
+    list-style: none;
   }
 </style>
