@@ -34,9 +34,9 @@
   .flex {
     background-color: var(--accent);
     color: var(--background);
-    height: 100%;
+
     display: flex;
-    width: max-content;
+    margin-top: var(--spacing-16);
     position: fixed;
     flex-direction: column;
     justify-content: center;
