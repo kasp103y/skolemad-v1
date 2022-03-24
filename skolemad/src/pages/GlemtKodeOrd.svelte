@@ -42,9 +42,9 @@
                     <a href="/#/logind">Send mail</a>
                   </Button>
 
-                  <Button type="danger">
+                  <!-- <Button type="danger">
                     <a href="/#/logind">Anuller</a>
-                  </Button>
+                  </Button> -->
                 </div>
               </div>
             </form>

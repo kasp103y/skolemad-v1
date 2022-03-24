@@ -1,6 +1,8 @@
-<script></script>
+<script>
+  let active = false;
+</script>
 
-<button><slot /></button>
+<button class:active on:click={() => (active = !active)}><slot /></button>
 
 <style>
   button {
@@ -15,6 +17,17 @@
     cursor: pointer;
     display: block;
     transition: ease 250ms;
+  }
+
+  .active {
+    background-color: var(--font);
+    color: var(--background);
+  }
+
+  button:active {
+    background-color: var(--font);
+    color: var(--background);
+    border: none;
   }
 
   button:hover {

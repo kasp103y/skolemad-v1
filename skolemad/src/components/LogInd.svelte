@@ -62,9 +62,9 @@
                     <a href="/#/konto">Login</a>
                   </Button>
 
-                  <Button type="danger">
+                  <!-- <Button type="danger">
                     <a href="/#/home">Anuller</a>
-                  </Button>
+                  </Button> -->
                 </div>
               </div>
 
