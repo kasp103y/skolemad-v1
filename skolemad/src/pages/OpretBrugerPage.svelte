@@ -59,9 +59,9 @@
                       <a href="/#/konto">Opret bruger</a>
                     </Button>
 
-                    <Button type="danger">
+                    <!--  <Button type="danger">
                       <a href="/#/logind">Anuller</a>
-                    </Button>
+                    </Button> -->
                   </div>
                 </div>
               </div>
