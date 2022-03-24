@@ -1,16 +1,10 @@
 <script></script>
 
-<button> <slot /> </button>
+<p><slot /></p>
 
 <style>
-  button {
-    height: 4rem;
-    width: 16rem;
-    padding: var(--spacing-2) var(--spacing-4);
-    background-color: var(--background);
-    border: var(--border-width-seconday) solid var(--primary);
-    margin-top: var(--spacing-2);
-    border-radius: var(--border-rounded);
+  p {
+    color: var(--white);
     cursor: pointer;
     display: block;
     transition: ease 250ms;
@@ -18,8 +12,7 @@
     font-weight: 800;
   }
 
-  button:hover {
-    background-color: var(--font);
-    color: var(--background);
+  p:hover {
+    color: var(--font);
   }
 </style>

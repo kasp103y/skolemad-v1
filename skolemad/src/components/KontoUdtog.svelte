@@ -22,7 +22,7 @@
 </script>
 
 <div class="flex">
-  <button class="open_pop_2"> Konto udtog </button>
+  <p class="open_pop_2">Konto udtog</p>
 
   <div id="pop_up_2">
     <div class="pop_up_style_2">
@@ -84,7 +84,7 @@
     z-index: 10;
     display: none;
     position: relative;
-    top: -38.3rem;
+    top: -25rem;
     background-color: rgba(0, 0, 0, 0.452);
     height: 100vh;
     width: 174vh;
@@ -124,26 +124,18 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-    padding-block: var(--spacing-2);
   }
   .open_pop_2 {
-    height: 4rem;
-    width: 16rem;
-    padding: var(--spacing-2) var(--spacing-4);
-    background-color: var(--background);
-    border: var(--border-width-seconday) solid var(--primary);
-    margin-top: var(--spacing-2);
-    border-radius: var(--border-rounded);
     cursor: pointer;
     display: block;
     transition: ease 250ms;
     text-align: start;
     font-weight: 800;
+    color: var(--white);
   }
 
   .open_pop_2:hover {
-    background-color: var(--font);
-    color: var(--background);
+    color: var(--font);
   }
   .luk_knap_2 {
     cursor: pointer;

@@ -22,7 +22,7 @@
 </script>
 
 <div class="flex">
-  <button class="open_pop"> Bestillings oversigt </button>
+  <p class="open_pop">Bestillings oversigt</p>
 
   <div id="pop_up">
     <div class="pop_up_style">
@@ -115,7 +115,7 @@
   #pop_up {
     display: none;
     position: relative;
-    top: -33.7rem;
+    top: -22.7rem;
     background-color: rgba(0, 0, 0, 0.452);
     height: 110vh;
     width: 174vh;
@@ -159,7 +159,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-block: var(--spacing-2);
   }
   .luk_knap {
     height: 0;
@@ -176,23 +175,16 @@
     color: red;
   }
   .open_pop {
-    height: 4rem;
-    width: 16rem;
-    padding: var(--spacing-2) var(--spacing-4);
-    background-color: var(--background);
-    border: var(--border-width-seconday) solid var(--primary);
-    margin-top: var(--spacing-2);
-    border-radius: var(--border-rounded);
     cursor: pointer;
     display: block;
     transition: ease 250ms;
     text-align: start;
     font-weight: 800;
+    color: var(--white);
   }
 
   .open_pop:hover {
-    background-color: var(--font);
-    color: var(--background);
+    color: var(--font);
   }
 
   .form {
