@@ -5,7 +5,7 @@
 <style>
   button {
     height: 4rem;
-    width: 12rem;
+    width: 16rem;
     padding: var(--spacing-2) var(--spacing-4);
     background-color: var(--background);
     border: var(--border-width-seconday) solid var(--primary);
