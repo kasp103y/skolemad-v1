@@ -4,7 +4,7 @@
 
 <style>
   p {
-    color: var(--white);
+    color: var(--background);
     cursor: pointer;
     display: block;
     transition: ease 250ms;
