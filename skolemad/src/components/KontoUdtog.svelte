@@ -86,7 +86,7 @@
     position: relative;
     top: -25rem;
     background-color: rgba(0, 0, 0, 0.452);
-    height: 100vh;
+    height: 170vh;
     width: 174vh;
   }
   .pop_up_style_2 {
@@ -131,7 +131,7 @@
     transition: ease 250ms;
     text-align: start;
     font-weight: 800;
-    color: var(--white);
+    color: var(--background);
   }
 
   .open_pop_2:hover {
