@@ -12,7 +12,7 @@
   <nav>
     <div>
       <a class="logo-link" href="/">
-        <p class="logo">Skole<span>Mad</span></p>
+        <p class="logo">Skole<span>Mad</span>.dk</p>
       </a>
     </div>
 
